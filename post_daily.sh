@@ -9,5 +9,6 @@ git pull -q --rebase >> post.log 2>&1 || true
 echo "=== $(date -Is) $*" >> post.log
 python3 post_next.py "$@" >> post.log 2>&1
 status=$?
-tail -n 6 post.log
+python3 stats.py "$@" >> post.log 2>&1 || echo "stats step failed" >> post.log
+tail -n 20 post.log
 exit $status
