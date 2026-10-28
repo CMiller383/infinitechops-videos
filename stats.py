@@ -109,8 +109,9 @@ def main():
         except ApiError as e:
             errors[vid] = str(e)
         posts[vid] = row
-        show = ', '.join(f'{k} {row[k]}' for k in ('views', 'reach', 'ig_reels_avg_watch_time', 'likes', 'like_count',
-                                                     'comments_count', 'shares', 'saved') if row.get(k) is not None)
+        show = ', '.join(f'{k} {row[k]}' for k in ('views', 'reach', 'ig_reels_avg_watch_time', 'ig_reels_video_view_total_time',
+                                                     'reels_skip_rate', 'like_count', 'comments_count', 'shares', 'saved',
+                                                     'total_interactions') if row.get(k) is not None)
         print(f"  {vid}: {row.get('age_hours', '?')} h old; {show or 'no numbers yet'}")
     missing = sorted({m for e in errors.values() if isinstance(e, dict) for m in e})
     if missing:
