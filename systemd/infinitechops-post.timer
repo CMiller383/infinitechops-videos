@@ -1,7 +1,8 @@
 [Unit]
-Description=Post one infinitechops Reel a day at 7 pm
+Description=Post an infinitechops Reel at noon and 7 pm
 
 [Timer]
+OnCalendar=*-*-* 12:00:00
 OnCalendar=*-*-* 19:00:00
 RandomizedDelaySec=10min
 Persistent=true
