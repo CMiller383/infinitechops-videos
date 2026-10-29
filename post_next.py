@@ -73,7 +73,8 @@ def main():
     if check:
         print('check only: next up is', nxt['id']); return
 
-    c = call('POST', f'{ig_id}/media', media_type='REELS', video_url=video_url, caption=nxt['caption'], share_to_feed='true')
+    c = call('POST', f'{ig_id}/media', media_type='REELS', video_url=video_url, caption=nxt['caption'], share_to_feed='true',
+             thumb_offset=str(nxt.get('thumb_ms', 1250)))   # cover frame (ms): the whole object, not the opening teaser
     cid = c['id']; print('container', cid)
     for _ in range(40):                                    # Instagram processes the video; allow up to ~10 minutes
         time.sleep(15)
