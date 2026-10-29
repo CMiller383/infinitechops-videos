@@ -1,0 +1,66 @@
+{
+  "updated_at": "2026-10-29T00:44:03Z",
+  "account": {
+    "username": "infinitechops",
+    "followers_count": 1,
+    "media_count": 3
+  },
+  "posts": {
+    "01-mango": {
+      "permalink": "https://www.instagram.com/reel/DfC8i_biv8O/",
+      "posted_at": "2026-10-28T17:16:29Z",
+      "age_hours": 7.5,
+      "like_count": 13,
+      "comments_count": 3,
+      "views": 1910,
+      "reach": 1681,
+      "likes": 13,
+      "comments": 3,
+      "shares": 5,
+      "saved": 1,
+      "total_interactions": 22,
+      "ig_reels_avg_watch_time": 13468,
+      "ig_reels_video_view_total_time": 22545840,
+      "reels_skip_rate": 36.9
+    },
+    "05-earth": {
+      "permalink": "https://www.instagram.com/reel/DfDY4gfiaBa/",
+      "posted_at": "2026-10-28T21:23:56Z",
+      "age_hours": 3.3,
+      "like_count": 25,
+      "comments_count": 1,
+      "views": 1392,
+      "reach": 1168,
+      "likes": 25,
+      "comments": 1,
+      "shares": 1,
+      "saved": 2,
+      "total_interactions": 29,
+      "ig_reels_avg_watch_time": 22472,
+      "ig_reels_video_view_total_time": 25865620,
+      "reels_skip_rate": 24.4
+    },
+    "07-geode": {
+      "permalink": "https://www.instagram.com/reel/DfDvwiRjj8K/",
+      "posted_at": "2026-10-29T00:44:01Z",
+      "age_hours": 0.0,
+      "like_count": 0,
+      "comments_count": 0,
+      "views": 0,
+      "reach": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 0,
+      "ig_reels_video_view_total_time": 0,
+      "reels_skip_rate": 0
+    }
+  },
+  "errors": {
+    "01-mango": {
+      "reposts": "100: Instagram Insights Media API endpoint does not support the metrics: reposts. Please refer to https://developers.facebook.com/docs/instagram/reference/media#insi"
+    }
+  }
+}
